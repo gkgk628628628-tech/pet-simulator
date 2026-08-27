@@ -24,9 +24,10 @@ export default function PetGamePage({ pet, onExit }) {
   );
 
   useEffect(() => {
-    if (!game.reaction) speakText(requestText);
+    if (!game.activity &&!game.reaction) 
+      {speakText(requestText);}
     return stopSpeaking;
-  }, [game.reaction, requestText]);
+  }, [game.activity,game.reaction, requestText]);
 
   return (
     <main
@@ -44,6 +45,8 @@ export default function PetGamePage({ pet, onExit }) {
         reactionKey={game.reactionKey}
         petImage={displayedPetImage}
         petName={pet.name}
+        dragImage={game.currrentActivity?.dragImage}
+        hidePetOnComplete={game.currentActivity?.hidePetOnComplete}
         isHappy={game.isHappy}
         interactionType={game.currentActivity?.interaction}
         interactionMode={game.interactionMode}

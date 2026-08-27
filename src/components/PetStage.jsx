@@ -5,6 +5,8 @@ export default function PetStage({
   reactionKey,
   petImage,
   petName,
+  dragImage,
+  hidePetOnComplete,
   isHappy,
   interactionType,
   interactionMode,
@@ -17,6 +19,13 @@ export default function PetStage({
   const [cursorPosition, setCursorPosition] = useState({ x: 50, y: 50 });
   const [isDragging, setIsDragging] = useState(false);
   const isInteractive = ["placingToy", "walking", "petting"].includes(interactionMode);
+  
+  const displayedImage =
+    interactionMode === "walking" && dragImage
+      ? dragImage
+      : interactionMode === "completed" && hidePetOnComplete
+        ? null
+        : petImage;
   const isPositioned =
     (interactionType === "place" && ["playing", "completed"].includes(interactionMode)) ||
     (interactionType === "drag-timer" && ["walking", "completed"].includes(interactionMode));
@@ -67,13 +76,15 @@ export default function PetStage({
           {reaction}
         </div>
       )}
+      {displayedImage && (
       <div
         className={`pet-placeholder ${isHappy ? "pet-placeholder--happy" : ""} ${isPositioned ? "pet-placeholder--positioned" : ""}`}
         key={`pet-${reactionKey}`}
         style={isPositioned ? { left: `${position.x}%`, top: `${position.y}%` } : undefined}
       >
-        <img className="pet-image" src={petImage} alt={petName} />
+        <img className="pet-image" src={displayedImage} alt={petName} />
       </div>
+      )}
       {interactionMode === "placingToy" && selectedOption && (
         <img
           className="toy-cursor"

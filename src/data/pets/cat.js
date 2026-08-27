@@ -11,12 +11,12 @@ const catActions = [ // cat을 새 동물의 영문 이름으로 변경
   {
     id: "cat-action-2", // cat을 새 동물의 영문 이름으로 변경
     name: "놀아주기",
-    image: catAsset("menu/play-cat.webp"), // cat을 새 동물의 영문 이름으로 변경
+    image: catAsset("menu/play-tool.webp"), // cat을 새 동물의 영문 이름으로 변경
   },
   {
     id: "cat-action-3", // cat을 새 동물의 영문 이름으로 변경
     name: "화장실 청소하기",
-    image: catAsset("menu/mdeicine.webp"), // cat을 새 동물의 영문 이름으로 변경
+    image: catAsset("menu/clean-tool.webp"), // cat을 새 동물의 영문 이름으로 변경
   },
   {
     id: "cat-action-4", // cat을 새 동물의 영문 이름으로 변경
@@ -39,7 +39,7 @@ const activities = {
         name: "물",
         image: catAsset("items/water.webp"), // cat을 새 동물의 영문 이름으로 변경
         //                     ↑ 실제 파일명 입력
-        actionImage: catAsset("actions/water-catbp"), // cat을 새 동물의 영문 이름으로 변경
+        actionImage: catAsset("actions/water-cat.webp"), // cat을 새 동물의 영문 이름으로 변경
         //                             ↑ 실제 파일명 입력
         reaction: "시원하게 물을 마셨어요!",
       },
@@ -72,37 +72,37 @@ const activities = {
     interaction: "place",
     // 상호작용 방식 고정: 물건을 움직여 원하는 위치에 놓기
     completionDelay: 1300,
-    background: catAsset("backgrounds/두번째-행동-배경-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-    instruction: "물건을 움직일 때 표시할 안내 문구 입력",
-    progressMessage: "물건을 놓은 뒤 표시할 문구 입력",
+    background: catAsset("backgrounds/cat-house.webp"), // cat을 새 동물의 영문 이름으로 변경
+    instruction: "장난감을 움직여서 원하는 곳에 놓아 주세요!",
+    progressMessage: "고양이가 장난감을 따라가요!",
     options: [
       {
         id: "cat-action-2-option-1", // cat을 새 동물의 영문 이름으로 변경
-        name: "첫 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/첫-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/첫-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "첫 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "공",
+        image: catAsset("items/ball(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        actionImage: catAsset("actions/ball(2)-cat.webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "공 놀이 신나요!",
       },
       {
         id: "cat-action-2-option-2", // cat을 새 동물의 영문 이름으로 변경
-        name: "두 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/두번째-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/두번째-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "두 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "깃털 낚시대",
+        image: catAsset("items/git.webp"), // cat을 새 동물의 영문 이름으로 변경
+        actionImage: catAsset("actions/fish-cat.webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "깃털 잡았어요! 신나요!",
       },
       {
         id: "cat-action-2-option-3", // cat을 새 동물의 영문 이름으로 변경
-        name: "세 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/세번째-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/세번째-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "세 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "장난감",
+        image: catAsset("items/mousebot.webp"), // cat을 새 동물의 영문 이름으로 변경
+        actionImage: catAsset("actions/mousebot-cat.webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "움직이는 장난감 재밌어요!",
       },
       {
         id: "cat-action-2-option-4", // cat을 새 동물의 영문 이름으로 변경
-        name: "네 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/네번째-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/네번째-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "네 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "인형",
+        image: catAsset("items/toy.webp"), // cat을 새 동물의 영문 이름으로 변경
+        actionImage: catAsset("actions/toy-fish.webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "인형이 푹신해요!"
       },
     ],
   },
@@ -111,41 +111,45 @@ const activities = {
     // ↑ catActions의 세 번째 ID와 동일하게 입력 // cat을 새 동물의 영문 이름으로 변경
     interaction: "drag-timer",
     // 상호작용 방식 고정: 동물을 일정 시간 드래그
+    dragImage: catAsset("drag/comb.webp"), // 드래그할 이미지 (삽?)
+    hidePetOnComplete: true,
     duration: 10,
-    background: catAsset("backgrounds/세번째-행동-배경-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-    instruction: "동물을 움직이는 동안 표시할 안내 문구 입력",
+    completionDelay: 1300,
+    background: catAsset("backgrounds/(back)toilet.webp"), // cat을 새 동물의 영문 이름으로 변경
+    instruction: "",
+    progressMessage: "화장실이 깨끗해졌어요!",
     options: [
       {
         id: "cat-action-3-option-1", // cat을 새 동물의 영문 이름으로 변경
-        name: "첫 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/첫-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        background: catAsset("backgrounds/첫-선택-후-배경-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/첫-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "첫 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "대변 치우기",
+        image: catAsset("items/ddong-out(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        background: catAsset("backgrounds/(b)ddong.webp"),
+        actionImage: catAsset("actions/ddong-out(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "대변을 치워줘서 고마워요!",
       },
       {
         id: "cat-action-3-option-2", // cat을 새 동물의 영문 이름으로 변경
-        name: "두 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/두번째-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        background: catAsset("backgrounds/두번째-선택-후-배경-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/두번째-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "두 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "뭉친 모래 치우기",
+        image: catAsset("items/pee-put(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        background: catAsset("backgrounds/(b)pee.webp"),
+        actionImage: catAsset("actions/pee-put(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "뭉친 모래를 치워줘서 고마워요!",
       },
       {
         id: "cat-action-3-option-3", // cat을 새 동물의 영문 이름으로 변경
-        name: "세 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/세번째-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        background: catAsset("backgrounds/세번째-선택-후-배경-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/세번째-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "세 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "모래 채우기",
+        image: catAsset("items/more-sand(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        background: catAsset("backgrounds/(b)sand.webp"),
+        actionImage: catAsset("actions/more-sand(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "새 모래가 채워져서 기분이 좋아요!",
       },
       {
         id: "cat-action-3-option-4", // cat을 새 동물의 영문 이름으로 변경
-        name: "네 번째 세부 행동 버튼 문구 입력",
-        image: catAsset("items/네번째-선택-버튼-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        background: catAsset("backgrounds/네번째-선택-후-배경-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        actionImage: catAsset("actions/네번째-행동-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-        reaction: "네 번째 세부 행동이 끝난 뒤 표시할 문구 입력",
+        name: "정리하기",
+        image: catAsset("items/clean(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        background: catAsset("backgrounds/(b)dirty.webp"),
+        actionImage: catAsset("actions/clean(2).webp"), // cat을 새 동물의 영문 이름으로 변경
+        reaction: "주변을 깨끗하게 정리해줘서 고마워요!",
       },
     ],
   },
@@ -154,9 +158,9 @@ const activities = {
     interaction: "pet-timer",
     // 상호작용 방식 고정: 세부 선택 없이 10초 동안 도구를 움직임
     duration: 10,
-    instruction: "상호작용하는 동안 표시할 안내 문구 입력",
-    toolImage: catAsset("tools/움직이는-도구-이미지-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
-    reaction: "10초 상호작용이 끝난 뒤 표시할 문구 입력",
+    instruction: "빗으로 털을 빗어 주세요!",
+    toolImage: catAsset("tools/comb.webp"), // cat을 새 동물의 영문 이름으로 변경
+    reaction: "털이 부드러워졌어요!",
   },
 };
 
@@ -166,94 +170,94 @@ const requests = [
     //           ↑ 연결할 큰 행동 ID 입력
     optionId: "cat-action-1-option-1", // cat을 새 동물의 영문 이름으로 변경
     //         ↑ 연결할 세부 행동 ID 입력
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "지금은 ",
+    highlight: "목이 말라요",
+    after: ".",
   },
   {
     activityId: "cat-action-1", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-1-option-2", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "지금은 ",
+    highlight: "배가 고파요",
+    after: ".",
   },
   {
     activityId: "cat-action-1", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-1-option-3", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "지금은 ",
+    highlight: "간식",
+    after: "이 먹고 싶어요.",
   },
   {
     activityId: "cat-action-1", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-1-option-4", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "너무 아파요.",
+    highlight: "약",
+    after: "이 필요해요.",
   },
   {
     activityId: "cat-action-2", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-2-option-1", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "지금은 ",
+    highlight: "공",
+    after: "가지고 놀래요.",
   },
   {
     activityId: "cat-action-2", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-2-option-2", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "지금은 ",
+    highlight: "깃털 낚시대",
+    after: "가지고 놀래요.",
   },
   {
     activityId: "cat-action-2", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-2-option-3", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "지금은 ",
+    highlight: "장난감",
+    after: "가지고 놀래요.",
   },
   {
     activityId: "cat-action-2", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-2-option-4", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "지금은 ",
+    highlight: "인형",
+    after: "가지고 놀래요.",
   },
   {
     activityId: "cat-action-3", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-3-option-1", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "냄새나요.",
+    highlight: "대변",
+    after: "을 치워 주세요!",
   },
   {
     activityId: "cat-action-3", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-3-option-2", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "모래가 뭉쳤어요.",
+    highlight: "뭉친 모래",
+    after: "를 치워 주세요.",
   },
   {
     activityId: "cat-action-3", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-3-option-3", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "모래가 부족해요.",
+    highlight: "새 모래",
+    after: "를 채워 주세요.",
   },
   {
     activityId: "cat-action-3", // cat을 새 동물의 영문 이름으로 변경
     optionId: "cat-action-3-option-4", // cat을 새 동물의 영문 이름으로 변경
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "주변에",
+    highlight: "모래가 떨어져있어요",
+    after: ". 깨끗하게 정리해 주세요!",
   },
   {
     activityId: "cat-action-4", // cat을 새 동물의 영문 이름으로 변경
     optionId: null,
     // 네 번째 행동에는 세부 선택지가 없으므로 null 유지
-    before: "강조 문구 앞에 표시할 내용 입력",
-    highlight: "강조색으로 표시할 핵심 문구 입력",
-    after: "강조 문구 뒤에 표시할 내용 입력",
+    before: "",
+    highlight: "털이 엉켰어요",
+    after: ".",
   },
 ];
 
@@ -261,10 +265,10 @@ export const cat = { // cat을 새 동물의 영문 이름으로 변경
   //           ↑ 새 동물의 영문 이름으로 변경
   id: "cat", // cat을 새 동물의 영문 이름으로 변경
   //   ↑ 새 동물의 영문 ID로 변경
-  name: "화면에 표시할 동물 이름 입력",
+  name: "고양이",
   selectionImage: catAsset("pet.webp"), // cat을 새 동물의 영문 이름으로 변경
   defaultImage: catAsset("pet.webp"), // cat을 새 동물의 영문 이름으로 변경
-  homeBackground: catAsset("backgrounds/집-배경-파일명.webp"), // cat을 새 동물의 영문 이름으로 변경
+  homeBackground: catAsset("backgrounds/cat-house.webp"), // cat을 새 동물의 영문 이름으로 변경
   available: true,
   actions: catActions, // cat을 새 동물의 영문 이름으로 변경
   //       ↑ 새 동물 이름으로 변경
